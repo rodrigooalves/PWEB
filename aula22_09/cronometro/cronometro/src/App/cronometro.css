@@ -1,42 +1,73 @@
- .container{
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top, #2f2d62, #171727 45%, #0b0d1a 100%);
+    color: #f3f3f3;
+}
+
+.container {
+    min-height: 100vh;
     display: flex;
-    width: 100%;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    background-color: gray;
+    padding: 30px 20px;
+    position: relative;
 }
 
-.img{
-    margin: 100px auto;
-    width: 300px;
-    height: 350px;
+.img {
+    width: 320px;
+    height: auto;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.35));
+    margin-bottom: -40px;
+    z-index: 1;
 }
 
-
- .timer{
-    font-size: 130px;
-    margin-top: -330px;
+.timer {
+    position: relative;
+    z-index: 2;
+    font-size: 7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 0 0 18px rgba(166, 126, 255, 0.9);
+    margin-top: 0;
 }
 
-.areaTexto{
-    margin-top: 120px;
+.areaTexto {
+    margin-top: 30px;
     display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.botao{
+
+.botao {
     width: 150px;
-    background-color:thistle; 
-    font-size: 20px;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #d9b3ff, #f1d9ff);
+    color: #1c1c2d;
+    font-size: 1.1rem;
+    font-weight: 700;
     text-align: center;
-    border-radius: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
     cursor: pointer;
-    padding: 5px;
+    padding: 14px 20px;
+    box-shadow: 0 10px 25px rgba(126, 94, 173, 0.35);
+    transition: all 0.25s ease;
 }
-.botao:hover{
-    opacity: 0.9;
-    color:chartreuse;
-    transition: all 0.60s;
+
+.botao:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 16px 30px rgba(169, 127, 255, 0.45);
+    background: linear-gradient(135deg, #c8f7d5, #d9b3ff);
+}
+
+.botao:active {
+    transform: translateY(0) scale(0.98);
 }
 

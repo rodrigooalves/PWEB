@@ -1,9 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import IMC from './pages/IMC'
+import App from './App';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <IMC />
+    <App />
   </StrictMode>,
 )
